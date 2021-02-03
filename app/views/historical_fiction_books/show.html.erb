@@ -1,0 +1,63 @@
+<p>
+  <strong>Title:</strong>
+  <%= @historical_fiction_book.title %>
+</p>
+
+<p>
+  <strong>Date finished:</strong>
+  <%= @historical_fiction_book.date_finished %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @historical_fiction_book.pages %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @historical_fiction_book.author %>
+</p>
+
+<p>
+  <strong>Illustrator:</strong>
+  <%= @historical_fiction_book.illustrator %>
+</p>
+
+<p>
+  <strong>Genre explanation:</strong>
+  <%= @historical_fiction_book.genre_explanation %>
+</p>
+
+<p>
+  <strong>Main characters:</strong>
+  <%= @historical_fiction_book.main_characters %>
+</p>
+
+<p>
+  <strong>Setting:</strong>
+  <%= @historical_fiction_book.setting %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @historical_fiction_book.problem %>
+</p>
+
+<p>
+  <strong>Solution:</strong>
+  <%= @historical_fiction_book.solution %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @historical_fiction_book.rating %>
+</p>
+
+<p>
+  <strong>Rationale:</strong>
+  <%= @historical_fiction_book.rationale %>
+</p>
+
+<%= link_to 'Edit', edit_historical_fiction_book_path(@historical_fiction_book) %> |
+<%= link_to 'Destroy', @historical_fiction_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', historical_fiction_books_path %>

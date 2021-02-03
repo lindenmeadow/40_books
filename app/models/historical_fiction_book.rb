@@ -1,0 +1,2 @@
+class HistoricalFictionBook < ApplicationRecord
+end
