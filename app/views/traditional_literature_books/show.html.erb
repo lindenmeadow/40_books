@@ -1,0 +1,54 @@
+
+<p>
+  <strong>Title:</strong>
+  <%= @traditional_literature_book.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @traditional_literature_book.author %>
+</p>
+
+<p>
+  <strong>Illustrator:</strong>
+  <%= @traditional_literature_book.illustrator %>
+</p>
+
+<p>
+  <strong>Country of Origin:</strong>
+  <%= @traditional_literature_book.country %>
+</p>
+
+<p>
+  <strong>Type of Characters:</strong>
+  <%= @traditional_literature_book.characters %>
+</p>
+
+<p>
+  <strong>Setting:</strong>
+  <%= @traditional_literature_book.setting %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @traditional_literature_book.problem %>
+</p>
+
+<p>
+  <strong>Solution:</strong>
+  <%= @traditional_literature_book.solution %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @traditional_literature_book.rating %>
+</p>
+
+<p>
+  <strong>Rating Rationale:</strong>
+  <%= @traditional_literature_book.rationale %>
+</p>
+
+<%= link_to 'Edit', edit_traditional_literature_book_path(@traditional_literature_book) %> |
+<td><%= link_to 'Destroy', @traditional_literature_book, method: :delete, data: { confirm: 'Are you sure?' } %></td> |
+<%= link_to 'Back', traditional_literature_books_path %>

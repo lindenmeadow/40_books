@@ -1,0 +1,81 @@
+<%= form_with(model: traditional_literature_book, local: true) do |form| %>
+  <% if traditional_literature_book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(traditional_literature_book.errors.count, "error") %> prohibited this traditional_literature_book from being saved:</h2>
+
+      <ul>
+        <% traditional_literature_book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field mb-3">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :date_finished %>
+    <%= form.date_field :date_finished %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :pages %>
+    <%= form.number_field :pages %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :illustrator %>
+    <%= form.text_field :illustrator %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :characters %>
+    <%= form.text_field :characters %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :setting %>
+    <%= form.text_field :setting %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :problem %>
+    <%= form.text_area :problem %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :solution %>
+    <%= form.text_area :solution %>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :rating %>
+    <br>
+    <%= form.radio_button :rating, "Yuck" %>Yuck <br>
+    <%= form.radio_button :rating, "Meh" %>Meh <br>
+    <%= form.radio_button :rating, "Good" %>Good <br>
+    <%= form.radio_button :rating, "Awesome" %>Awesome <br>
+  </div>
+
+  <div class="field  mb-3">
+    <%= form.label :rationale %>
+    <%= form.text_area :rationale %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

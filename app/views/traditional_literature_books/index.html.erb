@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Traditional Literature Books</h1>
+
+  
+
+  <div class="container">
+    <ul class="list-group list-group-horizontal">
+    <% @traditional_literature_books.each do |traditional_literature_book| %>
+      <li class="list-group-item"><%= link_to traditional_literature_book.title, traditional_literature_book %></li>
+    <% end %>
+    </ul>
+  </div>
+
+<br>
+
+<%= link_to 'Add Traditional Literature Book', new_traditional_literature_book_path, class:"btn btn-primary" %>

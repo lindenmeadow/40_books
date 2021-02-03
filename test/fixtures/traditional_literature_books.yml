@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  author: MyString
+  illustrator: MyString
+  country: MyString
+  characters: MyString
+  setting: MyString
+  problem: MyText
+  solution: MyText
+  rating: MyString
+  rationale: MyText
+
+two:
+  title: MyString
+  author: MyString
+  illustrator: MyString
+  country: MyString
+  characters: MyString
+  setting: MyString
+  problem: MyText
+  solution: MyText
+  rating: MyString
+  rationale: MyText

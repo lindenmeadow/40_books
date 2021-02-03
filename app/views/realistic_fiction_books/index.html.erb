@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Realistic Fiction Books</h1>
+
+<div class="container">
+    <ul class="list-group list-group-horizontal">
+      <% @realistic_fiction_books.each do |realistic_fiction_book| %>
+        <li class="list-group-item"><%= link_to realistic_fiction_book.title, realistic_fiction_book %></li>
+      <% end %>
+    </ul>
+</div>
+  
+<br>
+
+<%= link_to 'Add Realistic Fiction Book', new_realistic_fiction_book_path, class:"btn btn-primary" %>

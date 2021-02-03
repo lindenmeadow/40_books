@@ -1,0 +1,1 @@
+json.partial! "traditional_literature_books/traditional_literature_book", traditional_literature_book: @traditional_literature_book

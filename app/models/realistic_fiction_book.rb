@@ -1,0 +1,2 @@
+class RealisticFictionBook < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+class TraditionalLiteratureBook < ApplicationRecord
+end
