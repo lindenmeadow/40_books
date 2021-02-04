@@ -1,0 +1,13 @@
+<h1>Science Fiction Books</h1>
+
+<div class="container">
+  <ul class="list-group list-group-horizontal">
+      <% @science_fiction_books.each do |science_fiction_book| %>
+        <li class="list-group-item"><%= link_to science_fiction_book.title, science_fiction_book %></li>
+      <% end %>
+  </ul>
+</div>
+
+<br>
+
+<%= link_to 'New Science Fiction Book', new_science_fiction_book_path, class:'btn btn-primary' %>

@@ -1,0 +1,2 @@
+class ScienceFictionBook < ApplicationRecord
+end

@@ -1,11 +1,11 @@
 <h1>Fantasy Books</h1>
 
 <div class="container">
-<ul class="list-group list-group-horizontal">
-    <% @fantasy_books.each do |fantasy_book| %>
-      <li class="list-group-item"><%= link_to fantasy_book.title, fantasy_book %></li>
-    <% end %>
-</ul>
+  <ul class="list-group list-group-horizontal">
+      <% @fantasy_books.each do |fantasy_book| %>
+        <li class="list-group-item"><%= link_to fantasy_book.title, fantasy_book %></li>
+      <% end %>
+  </ul>
 </div>
 
 <br>
