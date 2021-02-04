@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_03_175412) do
+ActiveRecord::Schema.define(version: 2021_02_04_000546) do
+
+  create_table "fantasy_books", force: :cascade do |t|
+    t.string "title"
+    t.date "date_finished"
+    t.integer "pages"
+    t.string "author"
+    t.string "illustrator"
+    t.text "genre_explanation"
+    t.string "main_characters"
+    t.string "setting"
+    t.text "problem"
+    t.text "solution"
+    t.string "rating"
+    t.text "rationale"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "historical_fiction_books", force: :cascade do |t|
     t.string "title"

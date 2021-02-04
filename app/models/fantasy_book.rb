@@ -1,0 +1,2 @@
+class FantasyBook < ApplicationRecord
+end

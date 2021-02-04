@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :fantasy_books
   resources :historical_fiction_books
   resources :realistic_fiction_books
   resources :traditional_literature_books
@@ -8,5 +9,6 @@ Rails.application.routes.draw do
   get 'traditional_literature_books/index'
   get 'realistic_ficiton_books/index'
   get 'historical_fiction_books/index'
+  get 'fantasy_books/index'
   root 'home#index'
 end
