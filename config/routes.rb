@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :mystery_books
   resources :science_fiction_books
   resources :fantasy_books
   resources :historical_fiction_books

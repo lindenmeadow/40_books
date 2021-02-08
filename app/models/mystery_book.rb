@@ -1,0 +1,2 @@
+class MysteryBook < ApplicationRecord
+end

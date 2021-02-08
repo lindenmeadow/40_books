@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  date_finished: 2021-02-08
+  pages: 1
+  author: MyString
+  illustrator: MyString
+  genre_explanation: MyText
+  main_characters: MyString
+  setting: MyString
+  problem: MyText
+  solution: MyText
+  rating: MyString
+  rationale: MyText
+
+two:
+  title: MyString
+  date_finished: 2021-02-08
+  pages: 1
+  author: MyString
+  illustrator: MyString
+  genre_explanation: MyText
+  main_characters: MyString
+  setting: MyString
+  problem: MyText
+  solution: MyText
+  rating: MyString
+  rationale: MyText
