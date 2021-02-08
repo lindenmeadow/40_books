@@ -1,0 +1,63 @@
+<p>
+  <strong>Title:</strong>
+  <%= @poetry_anthology_book.title %>
+</p>
+
+<p>
+  <strong>Date finished:</strong>
+  <%= @poetry_anthology_book.date_finished %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @poetry_anthology_book.pages %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @poetry_anthology_book.author %>
+</p>
+
+<p>
+  <strong>Illustrator:</strong>
+  <%= @poetry_anthology_book.illustrator %>
+</p>
+
+<p>
+  <strong>Favorite poem:</strong>
+  <%= @poetry_anthology_book.favorite_poem %>
+</p>
+
+<p>
+  <strong>Least favorite poem:</strong>
+  <%= @poetry_anthology_book.least_favorite_poem %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @poetry_anthology_book.rating %>
+</p>
+
+<p>
+  <strong>Rationale:</strong>
+  <%= @poetry_anthology_book.rationale %>
+</p>
+
+<p>
+  <strong>Literal language:</strong>
+  <%= @poetry_anthology_book.literal_language %>
+</p>
+
+<p>
+  <strong>Nonliteral language:</strong>
+  <%= @poetry_anthology_book.nonliteral_language %>
+</p>
+
+<p>
+  <strong>Stanza:</strong>
+  <%= @poetry_anthology_book.stanza %>
+</p>
+
+<%= link_to 'Edit', edit_poetry_anthology_book_path(@poetry_anthology_book) %> |
+<%= link_to 'Destroy', @poetry_anthology_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', poetry_anthology_books_path %>

@@ -1,0 +1,13 @@
+<h1>Poetry Anthology Books</h1>
+
+<div class="container">
+    <ul class="list-group list-group-horizontal">
+      <% @poetry_anthology_books.each do |poetry_anthology_book| %>
+        <li class="list-group-item"><%= link_to poetry_anthology_book.title, poetry_anthology_book %></li>
+      <% end %>
+    </ul>
+</div>
+
+<br>
+
+<%= link_to 'New Poetry Anthology Book', new_poetry_anthology_book_path, class:'btn btn-primary' %>

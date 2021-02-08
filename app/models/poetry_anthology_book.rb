@@ -1,0 +1,2 @@
+class PoetryAnthologyBook < ApplicationRecord
+end
