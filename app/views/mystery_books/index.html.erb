@@ -1,13 +1,13 @@
 <h1>Mystery Books</h1>
-
-<% @mystery_books.each do |mystery_book| %>
       
-  <div class="container">
-    <ul class="list-group list-group-horizontal">  
+<div class="container">
+  <ul class="list-group list-group-horizontal">  
+    <% @mystery_books.each do |mystery_book| %>
       <li class="list-group-item"><%= link_to mystery_book.title, mystery_book %></li>
-    </ul>
-  </div>
-<% end %>
+    <% end %>
+  </ul>
+</div>
+
 
 <br>
 

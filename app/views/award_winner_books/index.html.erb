@@ -1,0 +1,13 @@
+<h1>Award Winner Books</h1>
+
+<div class="container">
+  <ul class="list-group list-group-horizontal">
+    <% @award_winner_books.each do |award_winner_book| %>
+      <li class="list-group-item"><%= link_to award_winner_book.title, award_winner_book %></li>
+    <% end %>
+  </ul>
+</div>
+
+<br>
+
+<%= link_to 'New Award Winner Book', new_award_winner_book_path, class:'btn btn-primary' %>

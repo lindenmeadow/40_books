@@ -1,0 +1,63 @@
+<p>
+  <strong>Title:</strong>
+  <%= @award_winner_book.title %>
+</p>
+
+<p>
+  <strong>Date finished:</strong>
+  <%= @award_winner_book.date_finished %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @award_winner_book.pages %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @award_winner_book.author %>
+</p>
+
+<p>
+  <strong>Illustrator:</strong>
+  <%= @award_winner_book.illustrator %>
+</p>
+
+<p>
+  <strong>Award:</strong>
+  <%= @award_winner_book.award %>
+</p>
+
+<p>
+  <strong>Main characters:</strong>
+  <%= @award_winner_book.main_characters %>
+</p>
+
+<p>
+  <strong>Setting:</strong>
+  <%= @award_winner_book.setting %>
+</p>
+
+<p>
+  <strong>Problem:</strong>
+  <%= @award_winner_book.problem %>
+</p>
+
+<p>
+  <strong>Solution:</strong>
+  <%= @award_winner_book.solution %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @award_winner_book.rating %>
+</p>
+
+<p>
+  <strong>Rationale:</strong>
+  <%= @award_winner_book.rationale %>
+</p>
+
+<%= link_to 'Edit', edit_award_winner_book_path(@award_winner_book) %> |
+<%= link_to 'Destroy', @award_winner_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', award_winner_books_path %>
