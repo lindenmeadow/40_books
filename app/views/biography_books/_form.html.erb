@@ -1,0 +1,71 @@
+<%= form_with(model: biography_book, local: true) do |form| %>
+  <% if biography_book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(biography_book.errors.count, "error") %> prohibited this biography_book from being saved:</h2>
+
+      <ul>
+        <% biography_book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field mb-3">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :date_finished %>
+    <%= form.date_select :date_finished %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :pages %>
+    <%= form.number_field :pages %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :things_learned %>
+    <%= form.text_area :things_learned %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :words_learned %>
+    <%= form.text_area :words_learned %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :question %>
+    <%= form.text_area :question %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :connection %>
+    <%= form.text_area :connection %>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :rating %>
+    <br>
+    <%= form.radio_button :rating, "Yuck" %>Yuck <br>
+    <%= form.radio_button :rating, "Meh" %>Meh <br>
+    <%= form.radio_button :rating, "Good" %>Good <br>
+    <%= form.radio_button :rating, "Awesome" %>Awesome <br>
+  </div>
+
+  <div class="field mb-3">
+    <%= form.label :rationale %>
+    <%= form.text_area :rationale %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

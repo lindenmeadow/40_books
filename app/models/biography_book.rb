@@ -1,0 +1,2 @@
+class BiographyBook < ApplicationRecord
+end

@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  date_finished: 2021-02-09
+  pages: 1
+  author: MyString
+  things_learned: MyText
+  words_learned: MyText
+  question: MyText
+  connection: MyText
+  rating: MyString
+  rationale: MyText
+
+two:
+  title: MyString
+  date_finished: 2021-02-09
+  pages: 1
+  author: MyString
+  things_learned: MyText
+  words_learned: MyText
+  question: MyText
+  connection: MyText
+  rating: MyString
+  rationale: MyText

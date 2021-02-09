@@ -1,0 +1,53 @@
+<p>
+  <strong>Title:</strong>
+  <%= @biography_book.title %>
+</p>
+
+<p>
+  <strong>Date finished:</strong>
+  <%= @biography_book.date_finished %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @biography_book.pages %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @biography_book.author %>
+</p>
+
+<p>
+  <strong>Things learned:</strong>
+  <%= @biography_book.things_learned %>
+</p>
+
+<p>
+  <strong>Words learned:</strong>
+  <%= @biography_book.words_learned %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @biography_book.question %>
+</p>
+
+<p>
+  <strong>Connection:</strong>
+  <%= @biography_book.connection %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @biography_book.rating %>
+</p>
+
+<p>
+  <strong>Rationale:</strong>
+  <%= @biography_book.rationale %>
+</p>
+
+<%= link_to 'Edit', edit_biography_book_path(@biography_book) %> |
+<%= link_to 'Destroy', biography_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', biography_books_path %>
