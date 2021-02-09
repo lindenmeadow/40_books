@@ -1,0 +1,53 @@
+<p>
+  <strong>Title:</strong>
+  <%= @informational_book.title %>
+</p>
+
+<p>
+  <strong>Date finished:</strong>
+  <%= @informational_book.date_finished %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @informational_book.pages %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @informational_book.author %>
+</p>
+
+<p>
+  <strong>Things learned:</strong>
+  <%= @informational_book.things_learned %>
+</p>
+
+<p>
+  <strong>Words learned:</strong>
+  <%= @informational_book.words_learned %>
+</p>
+
+<p>
+  <strong>Question:</strong>
+  <%= @informational_book.question %>
+</p>
+
+<p>
+  <strong>Connection:</strong>
+  <%= @informational_book.connection %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @informational_book.rating %>
+</p>
+
+<p>
+  <strong>Rationale:</strong>
+  <%= @informational_book.rationale %>
+</p>
+
+<%= link_to 'Edit', edit_informational_book_path(@informational_book) %> |
+<%= link_to 'Destroy', informational_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', informational_books_path %>

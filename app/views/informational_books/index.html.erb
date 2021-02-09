@@ -1,0 +1,13 @@
+<h1>Informational Books</h1>
+
+<div class="container">
+  <ul class="list-group list-group-horizontal">  
+    <% @informational_books.each do |informational_book| %>
+      <li class="list-group-item"><%= link_to informational_book.title, informational_book %></li>
+    <% end %>
+  </ul>
+</div>
+
+<br>
+
+<%= link_to 'New Informational Book', new_informational_book_path %>

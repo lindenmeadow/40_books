@@ -1,0 +1,2 @@
+class InformationalBook < ApplicationRecord
+end
