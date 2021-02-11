@@ -1,18 +1,32 @@
-<h1>Books</h1>
-
 <div class="container">
-
+    <h1 class="text-center">Your Reading Log</h1>
+        <h3 class="text-center">Your Progress:</h3>
+    <% if @book_total < 20 %>
+        <h4 class="text-center"><%= @book_total %> Books Read</h4>
+    <% elsif @book_total == 20 %>
+        <h4 class="text-center">20 Books Read. Halfway to Your Goal!</h4>
+    <% elsif @book_total > 20 && @book_total < 30 %>
+        <h4 class="text-center"><%= @book_total %> Books Read</h4>
+    <% elsif @book_total == 30 %>
+        <h4 class="text-center">30 Books Read. Doing Great!</h4>
+    <% elsif @book_total > 30 && @book_total < 40 %>
+        <h4 class="text-center"><%= @book_total %> Books Read</h4>
+    <% elsif @book_total == 40 %>
+        <h3 class="text-center">Congratulations! You Have Completed the 40 Book Challenge!</h3>
+    <% end %>
+    <br>
+    <h4 class="text-center">Book Categories</h4>
     <ul class="list-group list-group-flush text-center genre-list">
-        <li class="list-group-item"><%= link_to "Traditional Literature", traditional_literature_books_path %> <span class="badge bg-dark"> <%= @tlcount %></span></li>
-        <li class="list-group-item"><%= link_to "Realistic Fiction", realistic_fiction_books_path %> <span class="badge bg-dark"><%= @rfcount %></span></li>
-        <li class="list-group-item"><%= link_to "Historical Fiction", historical_fiction_books_path %> <span class="badge bg-dark"><%= @hfcount %></span></li>
-        <li class="list-group-item"><%= link_to "Fantasy", fantasy_books_path %> <span class="badge bg-dark"><%= @fcount %><span></li>
-        <li class="list-group-item"><%= link_to "Science Fiction", science_fiction_books_path %> <span class="badge bg-dark"><%= @sfcount %></li>
-        <li class="list-group-item"><%= link_to "Mystery", mystery_books_path %> <span class="badge bg-dark"><%= @mcount %></span></li>
-        <li class="list-group-item"><%= link_to "Award Winners", award_winner_books_path %> <span class="badge bg-dark"><%= @awcount %></span></li>
-        <li class="list-group-item"><%= link_to "Poetry Anthologies", poetry_anthology_books_path %> <span class="badge bg-dark"><% @pacount %></span></li>
-        <li class="list-group-item"><%= link_to "Biographies", biography_books_path %> <span class="badge bg-dark"><%= @bcount %></span></li>
-        <li class="list-group-item"><%= link_to "Nonfiction Informational", informational_books_path %> <span class="badge bg-dark"><%= @icount %></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Traditional Literature", traditional_literature_books_path %> <span class="badge bg-dark"><%= @tlcount %><span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Realistic Fiction", realistic_fiction_books_path %> <span class="badge bg-dark"><%= @rfcount %></span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Historical Fiction", historical_fiction_books_path %> <span class="badge bg-dark"><%= @hfcount %></span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Fantasy", fantasy_books_path %> <span class="badge bg-dark"><%= @fcount %><span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Science Fiction", science_fiction_books_path %> <span class="badge bg-dark"><%= @sfcount %></span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Mystery", mystery_books_path %> <span class="badge bg-dark"><%= @mcount %></span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Award Winners", award_winner_books_path %> <span class="badge bg-dark"><%= @awcount %></span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Poetry Anthologies", poetry_anthology_books_path %> <span class="badge bg-dark"><%= @pacount %></span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Biographies", biography_books_path %> <span class="badge bg-dark"><%= @bcount %></span></span></li>
+        <li class="list-group-item"><span class="btn btn-outline-info"><%= link_to "Nonfiction Informational", informational_books_path %> <span class="badge bg-dark"><%= @icount %></span></span></li>
     </ul>
 
 </div>

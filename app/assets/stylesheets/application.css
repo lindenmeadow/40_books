@@ -3,22 +3,36 @@
 }
 
 .form-section {
-  border: 5px groove #2eb82e;
+  border: 2px solid black;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 2rem;
+  width: 80%;
+}
+
+.book-review {
+  margin-top: 2rem;
+  border: 2px solid black;
   padding: 1rem;
   margin-bottom: 1.5rem;
   border-radius: 2rem;
+  width: 80%;
 }
 
-.genre-list {
-  width: 60%;
+.genre-list,
+.book-list {
+  width: 50%;
   margin: auto;
 }
 
-.genre-list a {
+.genre-list a,
+.book-list a {
   text-decoration: none;
   color: black;
 }
 
-.genre-list a:hover {
-  color: blue;
+.pick-ltrs {
+  font-size: 3rem;
+  font-weight: bold;
 }

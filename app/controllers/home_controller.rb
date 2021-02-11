@@ -35,5 +35,7 @@ class HomeController < ApplicationController
 
     @traditional_literature_books = TraditionalLiteratureBook.all
     @tlcount = @traditional_literature_books.count
+
+    @book_total = @awcount + @bcount + @fcount + @hfcount + @icount + @mcount + @pacount + @rfcount + @sfcount + @tlcount
   end
 end

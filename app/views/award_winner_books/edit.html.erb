@@ -1,6 +1,9 @@
-<h1>Editing Award Winner Book</h1>
+<div class="container">
+    <div class="container form-section">
+        <h1 class="text-center">Editing Award Winner Book</h1>
+        <%= render 'form', award_winner_book: @award_winner_book %>
+        <%= link_to 'Cancel', award_winner_books_path, class:'btn btn-secondary' %>
+    </div>
+</div>
 
-<%= render 'form', award_winner_book: @award_winner_book %>
 
-<%= link_to 'Show', @award_winner_book %> |
-<%= link_to 'Back', award_winner_books_path %>

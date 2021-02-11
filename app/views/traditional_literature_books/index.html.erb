@@ -1,13 +1,15 @@
-<h1>Traditional Literature Books</h1>
-<h5>Books in this log: <%= @traditional_literature_books.count %></h5>
-  <div class="container">
-    <ul class="list-group list-group-horizontal">
-    <% @traditional_literature_books.each do |traditional_literature_book| %>
-      <li class="list-group-item"><%= link_to traditional_literature_book.title, traditional_literature_book %></li>
-    <% end %>
-    </ul>
-  </div>
+<div class="container">
+  <h1 class="text-center">Traditional Literature</h1>
+    <div class="container">
+      <ul class="list-group list-group-flush text-center book-list">
+      <% @traditional_literature_books.each do |traditional_literature_book| %>
+        <li class="list-group-item"><span class="btn btn-outline-success"><%= link_to traditional_literature_book.title, traditional_literature_book %></span></li>
+      <% end %>
+      </ul>
+    </div>
 
-<br>
+  <hr>
 
-<%= link_to 'Add Traditional Literature Book', new_traditional_literature_book_path, class:"btn btn-primary" %>
+  <div class="text-center"><%= link_to 'Add Traditional Literature Book', new_traditional_literature_book_path, class:"btn btn-primary" %></div>
+
+</div>
