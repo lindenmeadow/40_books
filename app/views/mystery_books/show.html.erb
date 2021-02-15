@@ -1,63 +1,67 @@
-<p>
-  <strong>Title:</strong>
-  <%= @mystery_book.title %>
-</p>
+<div class="container book-review">
+  <h1 class="text-center">Book Review</h1>
+  <p>
+    <strong>Title:</strong>
+    <%= @mystery_book.title %>
+  </p>
 
-<p>
-  <strong>Date finished:</strong>
-  <%= @mystery_book.date_finished %>
-</p>
+  <p>
+    <strong>Date finished:</strong>
+    <%= @mystery_book.date_finished %>
+  </p>
 
-<p>
-  <strong>Pages:</strong>
-  <%= @mystery_book.pages %>
-</p>
+  <p>
+    <strong>Pages:</strong>
+    <%= @mystery_book.pages %>
+  </p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @mystery_book.author %>
-</p>
+  <p>
+    <strong>Author:</strong>
+    <%= @mystery_book.author %>
+  </p>
 
-<p>
-  <strong>Illustrator:</strong>
-  <%= @mystery_book.illustrator %>
-</p>
+  <p>
+    <strong>Illustrator:</strong>
+    <%= @mystery_book.illustrator %>
+  </p>
 
-<p>
-  <strong>Genre explanation:</strong>
-  <%= @mystery_book.genre_explanation %>
-</p>
+  <p>
+    <strong>Genre explanation:</strong>
+    <%= @mystery_book.genre_explanation %>
+  </p>
 
-<p>
-  <strong>Main characters:</strong>
-  <%= @mystery_book.main_characters %>
-</p>
+  <p>
+    <strong>Main characters:</strong>
+    <%= @mystery_book.main_characters %>
+  </p>
 
-<p>
-  <strong>Setting:</strong>
-  <%= @mystery_book.setting %>
-</p>
+  <p>
+    <strong>Setting:</strong>
+    <%= @mystery_book.setting %>
+  </p>
 
-<p>
-  <strong>Problem:</strong>
-  <%= @mystery_book.problem %>
-</p>
+  <p>
+    <strong>Problem:</strong>
+    <%= @mystery_book.problem %>
+  </p>
 
-<p>
-  <strong>Solution:</strong>
-  <%= @mystery_book.solution %>
-</p>
+  <p>
+    <strong>Solution:</strong>
+    <%= @mystery_book.solution %>
+  </p>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @mystery_book.rating %>
-</p>
+  <p>
+    <strong>Rating:</strong>
+    <%= @mystery_book.rating %>
+  </p>
 
-<p>
-  <strong>Rationale:</strong>
-  <%= @mystery_book.rationale %>
-</p>
+  <p>
+    <strong>Rationale:</strong>
+    <%= @mystery_book.rationale %>
+  </p>
 
-<%= link_to 'Edit', edit_mystery_book_path(@mystery_book) %> |
-<%= link_to 'Destroy', @mystery_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', mystery_books_path %>
+  <%= link_to 'Back', mystery_books_path, class:'btn btn-secondary' %>
+  <%= link_to 'Edit', edit_mystery_book_path(@mystery_book), class:'btn btn-warning' %>
+  <%= link_to 'Destroy', @mystery_book, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger %>
+
+</div>

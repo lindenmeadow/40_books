@@ -1,63 +1,67 @@
-<p>
-  <strong>Title:</strong>
-  <%= @science_fiction_book.title %>
-</p>
+<div class="container book-review">
+  <h1 class="text-center">Book Review</h1>
+  <p>
+    <strong>Title:</strong>
+    <%= @science_fiction_book.title %>
+  </p>
 
-<p>
-  <strong>Date finished:</strong>
-  <%= @science_fiction_book.date_finished %>
-</p>
+  <p>
+    <strong>Date finished:</strong>
+    <%= @science_fiction_book.date_finished %>
+  </p>
 
-<p>
-  <strong>Pages:</strong>
-  <%= @science_fiction_book.pages %>
-</p>
+  <p>
+    <strong>Pages:</strong>
+    <%= @science_fiction_book.pages %>
+  </p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @science_fiction_book.author %>
-</p>
+  <p>
+    <strong>Author:</strong>
+    <%= @science_fiction_book.author %>
+  </p>
 
-<p>
-  <strong>Illustrator:</strong>
-  <%= @science_fiction_book.illustrator %>
-</p>
+  <p>
+    <strong>Illustrator:</strong>
+    <%= @science_fiction_book.illustrator %>
+  </p>
 
-<p>
-  <strong>Genre explanation:</strong>
-  <%= @science_fiction_book.genre_explanation %>
-</p>
+  <p>
+    <strong>Genre explanation:</strong>
+    <%= @science_fiction_book.genre_explanation %>
+  </p>
 
-<p>
-  <strong>Main characters:</strong>
-  <%= @science_fiction_book.main_characters %>
-</p>
+  <p>
+    <strong>Main characters:</strong>
+    <%= @science_fiction_book.main_characters %>
+  </p>
 
-<p>
-  <strong>Setting:</strong>
-  <%= @science_fiction_book.setting %>
-</p>
+  <p>
+    <strong>Setting:</strong>
+    <%= @science_fiction_book.setting %>
+  </p>
 
-<p>
-  <strong>Problem:</strong>
-  <%= @science_fiction_book.problem %>
-</p>
+  <p>
+    <strong>Problem:</strong>
+    <%= @science_fiction_book.problem %>
+  </p>
 
-<p>
-  <strong>Solution:</strong>
-  <%= @science_fiction_book.solution %>
-</p>
+  <p>
+    <strong>Solution:</strong>
+    <%= @science_fiction_book.solution %>
+  </p>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @science_fiction_book.rating %>
-</p>
+  <p>
+    <strong>Rating:</strong>
+    <%= @science_fiction_book.rating %>
+  </p>
 
-<p>
-  <strong>Rationale:</strong>
-  <%= @science_fiction_book.rationale %>
-</p>
+  <p>
+    <strong>Rationale:</strong>
+    <%= @science_fiction_book.rationale %>
+  </p>
 
-<%= link_to 'Edit', edit_science_fiction_book_path(@science_fiction_book) %> |
-<%= link_to 'Destroy', @science_fiction_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', science_fiction_books_path %>
+  <%= link_to 'Back', science_fiction_books_path, class:'btn btn-secondary' %>
+  <%= link_to 'Edit', edit_science_fiction_book_path(@science_fiction_book), class:'btn btn-warning' %>
+  <%= link_to 'Destroy', @science_fiction_book, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %>
+
+</div>

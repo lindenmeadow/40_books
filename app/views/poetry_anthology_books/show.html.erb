@@ -1,3 +1,5 @@
+<div class="container book-review">
+  <h1 class="text-center">Book Review</h1>
 <p>
   <strong>Title:</strong>
   <%= @poetry_anthology_book.title %>
@@ -58,6 +60,8 @@
   <%= @poetry_anthology_book.stanza %>
 </p>
 
-<%= link_to 'Edit', edit_poetry_anthology_book_path(@poetry_anthology_book) %> |
-<%= link_to 'Destroy', @poetry_anthology_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', poetry_anthology_books_path %>
+<%= link_to 'Back', poetry_anthology_books_path, class:'btn btn-secondary' %>
+<%= link_to 'Edit', edit_poetry_anthology_book_path(@poetry_anthology_book), class:'btn btn-warning' %>
+<%= link_to 'Destroy', @poetry_anthology_book, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger %>
+
+</div>

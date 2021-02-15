@@ -1,13 +1,14 @@
-<h1>Science Fiction Books</h1>
-
 <div class="container">
-  <ul class="list-group list-group-horizontal">
-      <% @science_fiction_books.each do |science_fiction_book| %>
-        <li class="list-group-item"><%= link_to science_fiction_book.title, science_fiction_book %></li>
-      <% end %>
-  </ul>
+  <h1 class="text-center">Science Fiction Books</h1>
+  <div class="container">
+    <ul class="list-group list-group-flush text-center book-list">
+        <% @science_fiction_books.each do |science_fiction_book| %>
+          <li class="list-group-item"><span class="btn btn-outline-success"><%= link_to science_fiction_book.title, science_fiction_book %></span></li>
+        <% end %>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="text-center"><%= link_to 'Add a Science Fiction Book Review', new_science_fiction_book_path, class:'btn btn-primary' %></div>
 </div>
-
-<br>
-
-<%= link_to 'New Science Fiction Book', new_science_fiction_book_path, class:'btn btn-primary' %>

@@ -1,15 +1,46 @@
 <div class="container">
   <h1 class="text-center">Traditional Literature</h1>
+
+  <div class="text-center">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">About Traditional Literature</button>
+  </div>
+
+  <hr>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h6>Fairy Tale</h6>
+          <p>A fictional story that includes magic, magical creatures, or magical lands</p>
+          <h6>Folktale</h6>
+          <p>Stories or myths passed on through oral storytelling</p>
+          <h6>Myth</h6>
+          <p>Explains things that happen in nature, usually has gods and goddesses as characters</p>
+          <h6>Tall Tale</h6>
+          <p>An exaggerated story that is usually based on a real person or event</p>
+          <h6>Fable</h6>
+          <p>A story that teaches a lesson called a moral</p>
+          <h6>Legend</h6>
+          <p>A story linked to a person or event from history that may teach a lesson</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div class="container">
       <ul class="list-group list-group-flush text-center book-list">
-      <% @traditional_literature_books.each do |traditional_literature_book| %>
-        <li class="list-group-item"><span class="btn btn-outline-success"><%= link_to traditional_literature_book.title, traditional_literature_book %></span></li>
-      <% end %>
+        <% @traditional_literature_books.each do |traditional_literature_book| %>
+          <li class="list-group-item"><span class="btn btn-outline-success"><%= link_to traditional_literature_book.title, traditional_literature_book %></span></li>
+        <% end %>
       </ul>
     </div>
 
   <hr>
 
-  <div class="text-center"><%= link_to 'Add Traditional Literature Book', new_traditional_literature_book_path, class:"btn btn-primary" %></div>
+  <div class="text-center"><%= link_to 'Add a Traditional Literature Book Review', new_traditional_literature_book_path, class:"btn btn-primary" %></div>
 
 </div>
