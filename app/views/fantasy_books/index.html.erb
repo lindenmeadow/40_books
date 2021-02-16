@@ -1,13 +1,15 @@
-<h1>Fantasy Books</h1>
-
 <div class="container">
-  <ul class="list-group list-group-horizontal">
-      <% @fantasy_books.each do |fantasy_book| %>
-        <li class="list-group-item"><%= link_to fantasy_book.title, fantasy_book %></li>
-      <% end %>
-  </ul>
+  <h1 class="text-center">Fantasy Books</h1>
+
+  <div class="container">
+    <ul class="list-group list-group-flush text-center book-list">
+        <% @fantasy_books.each do |fantasy_book| %>
+          <li class="list-group-item"><span class="btn btn-outline-success"><%= link_to fantasy_book.title, fantasy_book %></span></li>
+        <% end %>
+    </ul>
+  </div>
+
+  <hr>
+
+  <div class="text-center"><%= link_to 'New Fantasy Book', new_fantasy_book_path, class:'btn btn-primary', class:'btn btn-primary' %></div>
 </div>
-
-<br>
-
-<%= link_to 'New Fantasy Book', new_fantasy_book_path, class:'btn btn-primary' %>

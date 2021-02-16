@@ -1,63 +1,67 @@
-<p>
-  <strong>Title:</strong>
-  <%= @fantasy_book.title %>
-</p>
+<div class="container book-review">
+  <h1 class="text-center">Book Review</h1>
+  <p>
+    <strong>Title:</strong>
+    <%= @fantasy_book.title %>
+  </p>
 
-<p>
-  <strong>Date finished:</strong>
-  <%= @fantasy_book.date_finished %>
-</p>
+  <p>
+    <strong>Date finished:</strong>
+    <%= @fantasy_book.date_finished %>
+  </p>
 
-<p>
-  <strong>Pages:</strong>
-  <%= @fantasy_book.pages %>
-</p>
+  <p>
+    <strong>Pages:</strong>
+    <%= @fantasy_book.pages %>
+  </p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @fantasy_book.author %>
-</p>
+  <p>
+    <strong>Author:</strong>
+    <%= @fantasy_book.author %>
+  </p>
 
-<p>
-  <strong>Illustrator:</strong>
-  <%= @fantasy_book.illustrator %>
-</p>
+  <p>
+    <strong>Illustrator:</strong>
+    <%= @fantasy_book.illustrator %>
+  </p>
 
-<p>
-  <strong>Genre explanation:</strong>
-  <%= @fantasy_book.genre_explanation %>
-</p>
+  <p>
+    <strong>Genre explanation:</strong>
+    <%= @fantasy_book.genre_explanation %>
+  </p>
 
-<p>
-  <strong>Main characters:</strong>
-  <%= @fantasy_book.main_characters %>
-</p>
+  <p>
+    <strong>Main characters:</strong>
+    <%= @fantasy_book.main_characters %>
+  </p>
 
-<p>
-  <strong>Setting:</strong>
-  <%= @fantasy_book.setting %>
-</p>
+  <p>
+    <strong>Setting:</strong>
+    <%= @fantasy_book.setting %>
+  </p>
 
-<p>
-  <strong>Problem:</strong>
-  <%= @fantasy_book.problem %>
-</p>
+  <p>
+    <strong>Problem:</strong>
+    <%= @fantasy_book.problem %>
+  </p>
 
-<p>
-  <strong>Solution:</strong>
-  <%= @fantasy_book.solution %>
-</p>
+  <p>
+    <strong>Solution:</strong>
+    <%= @fantasy_book.solution %>
+  </p>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @fantasy_book.rating %>
-</p>
+  <p>
+    <strong>Rating:</strong>
+    <%= @fantasy_book.rating %>
+  </p>
 
-<p>
-  <strong>Rationale:</strong>
-  <%= @fantasy_book.rationale %>
-</p>
+  <p>
+    <strong>Rationale:</strong>
+    <%= @fantasy_book.rationale %>
+  </p>
 
-<%= link_to 'Edit', edit_fantasy_book_path(@fantasy_book) %> |
-<%= link_to 'Destroy', @historical_fiction_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', fantasy_books_path %>
+  <%= link_to 'Back', fantasy_books_path, class:'btn btn-secondary' %>
+  <%= link_to 'Edit', edit_fantasy_book_path(@fantasy_book), class:'btn btn-warning' %>
+  <%= link_to 'Destroy', @historical_fiction_book, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %>
+  
+</div>

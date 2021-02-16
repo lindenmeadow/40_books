@@ -11,71 +11,130 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+<div class="row">
+  <div class="col-md">
+    <label class="form-label">Book Title</label>
+    <div class="field mb-3">
+      <%= form.text_field :title, class:'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :date_finished %>
-    <%= form.date_select :date_finished %>
+  <div class="col-md">
+    <label class="form-label">Date Finished</label>
+    <div class="field mb-3">
+      <%= form.date_field :date_finished, class:'form-control' %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+     <div class="col-md">
+        <label class="form-label">Number of Pages</label>
+        <div class="field mb-3">
+          <%= form.number_field :pages, class:'form-control' %>
+        </div>
+      </div>
+
+      <div class="col-md">
+        <label class="form-label">Author</label>
+        <div class="fieldmb-3">
+          <%= form.text_field :author, class:'form-control' %>
+        </div>
+      </div>
+</div>
+
+<div class="row">
+  <div class="col-md">
+    <label class="form-label">Illustrator</label>
+    <div class="fieldmb-3">
+      <%= form.text_field :illustrator, class:'form-control', placeholder:"(If no illustrator, put 'none')" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :pages %>
-    <%= form.number_field :pages %>
+  <div class="col-md">
+    <label class="form-label">I know this book is fantasy because...</label>
+    <div class="field mb-3">
+      <%= form.text_area :genre_explanation, class:'form-control' %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+        <label class="form-label">Main Characters</label>
+        <div class="field mb-3">
+          <%= form.text_field :characters, class:'form-control' %>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <label class="form-label">Setting</label>
+        <div class="field mb-3">
+          <%= form.text_field :setting, class:'form-control' %>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md">
+        <label class="form-label">Problem</label>
+        <div class="field mb-3">
+          <%= form.text_area :problem, class:'form-control' %>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <label class="form-label">Solution</label>
+        <div class="field mb-3">
+          <%= form.text_area :solution, class:'form-control' %>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+      <div class="col-md">
+          <fieldset class="row mb-3">
+            <label class="form-label">Your Rating</label>
+            <div class="input-group">
+              <div class="col-sm-2 text-center">
+                <div class="form-check">
+                  <%= form.radio_button :rating, "Yuck" %> &#128541;<br> Yuck
+                </div>
+              </div>
+      
+              <div class="col-sm-2 text-center">
+                <div class="form-check">
+                  <%= form.radio_button :rating, "Meh" %> &#128528;<br> Meh
+                </div>
+              </div>
+      
+              <div class="col-sm-2 text-center">
+                <div class="form-check text-center">
+                  <%= form.radio_button :rating, "Good" %> &#128578;<br> Good
+                </div>
+              </div>
+      
+              <div class="col-sm-2 text-center">
+                <div class="form-check">
+                  <%= form.radio_button :rating, "Awesome" %> &#128516;<br> Awesome
+                </div>
+              </div>
+
+            </div>
+          </fieldset>
+      </div>
+
+      <div class="col-md">
+          <label class="form-label">Rating Rationale</label>
+          <div class="field mb-3">
+            <%= form.text_area :rationale, class:'form-control', placeholder:'I gave it a ___ rating because...' %>
+          </div>
+      </div>
   </div>
 
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
-  </div>
-
-  <div class="field">
-    <%= form.label :illustrator %>
-    <%= form.text_field :illustrator %>
-  </div>
-
-  <div class="field">
-    <%= form.label :genre_explanation %>
-    <%= form.text_area :genre_explanation %>
-  </div>
-
-  <div class="field">
-    <%= form.label :main_characters %>
-    <%= form.text_field :main_characters %>
-  </div>
-
-  <div class="field">
-    <%= form.label :setting %>
-    <%= form.text_field :setting %>
-  </div>
-
-  <div class="field">
-    <%= form.label :problem %>
-    <%= form.text_area :problem %>
-  </div>
-
-  <div class="field">
-    <%= form.label :solution %>
-    <%= form.text_area :solution %>
-  </div>
-
-  <div class="field mb-3">
-    <%= form.label :rating %>
-    <br>
-    <%= form.radio_button :rating, "Yuck" %>Yuck <br>
-    <%= form.radio_button :rating, "Meh" %>Meh <br>
-    <%= form.radio_button :rating, "Good" %>Good <br>
-    <%= form.radio_button :rating, "Awesome" %>Awesome <br>
-  </div>
-
-  <div class="field">
-    <%= form.label :rationale %>
-    <%= form.text_area :rationale %>
-  </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit", class:'btn btn-success' %>
   </div>
+  <br>
 <% end %>
