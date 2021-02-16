@@ -1,5 +1,11 @@
-<h1>New Historical Fiction Book</h1>
+<div class="container">
+    <div class="container form-section">
 
-<%= render 'form', historical_fiction_book: @historical_fiction_book %>
+        <h1 class='text-center'>Adding Historical Fiction Review</h1>
 
-<%= link_to 'Back', historical_fiction_books_path %>
+        <%= render 'form', historical_fiction_book: @historical_fiction_book %>
+
+        <%= link_to 'Cancel', historical_fiction_books_path, class:'btn btn-secondary' %>
+
+    </div>
+</div>

@@ -1,13 +1,17 @@
-<h1>Biography Books</h1>
-
 <div class="container">
-    <ul class="list-group list-group-horizontal">
-      <% @biography_books.each do |biography_book| %>
-        <li class="list-group-item"><%= link_to biography_book.title, biography_book %></li>
-      <% end %>
-    </ul>
+
+    <h1 class="text-center">Biographies</h1>
+
+    <div class="container">
+        <ul class="list-group list-group-flush text-center book-list">
+          <% @biography_books.each do |biography_book| %>
+            <li class="list-group-item"><span class="btn btn-outline-success"><%= link_to biography_book.title, biography_book %></span></li>
+          <% end %>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="text-center"><%= link_to 'Add a Biography Review', new_biography_book_path, class:'btn btn-primary' %></div>
+
 </div>
-
-<br>
-
-<%= link_to 'New Biography Book', new_biography_book_path, class:'btn btn-primary' %>

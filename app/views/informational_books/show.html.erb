@@ -1,53 +1,59 @@
-<p>
-  <strong>Title:</strong>
-  <%= @informational_book.title %>
-</p>
+<div class="container book-review">
+  <h1 class="text-center">Book Review</h1>
 
-<p>
-  <strong>Date finished:</strong>
-  <%= @informational_book.date_finished %>
-</p>
+  <p>
+    <strong>Title:</strong>
+    <%= @informational_book.title %>
+  </p>
 
-<p>
-  <strong>Pages:</strong>
-  <%= @informational_book.pages %>
-</p>
+  <p>
+    <strong>Date finished:</strong>
+    <%= @informational_book.date_finished %>
+  </p>
 
-<p>
-  <strong>Author:</strong>
-  <%= @informational_book.author %>
-</p>
+  <p>
+    <strong>Pages:</strong>
+    <%= @informational_book.pages %>
+  </p>
 
-<p>
-  <strong>Things learned:</strong>
-  <%= @informational_book.things_learned %>
-</p>
+  <p>
+    <strong>Author:</strong>
+    <%= @informational_book.author %>
+  </p>
 
-<p>
-  <strong>Words learned:</strong>
-  <%= @informational_book.words_learned %>
-</p>
+  <p>
+    <strong>Things learned:</strong>
+    <%= @informational_book.things_learned %>
+  </p>
 
-<p>
-  <strong>Question:</strong>
-  <%= @informational_book.question %>
-</p>
+  <p>
+    <strong>Words learned:</strong>
+    <%= @informational_book.words_learned %>
+  </p>
 
-<p>
-  <strong>Connection:</strong>
-  <%= @informational_book.connection %>
-</p>
+  <p>
+    <strong>Question:</strong>
+    <%= @informational_book.question %>
+  </p>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @informational_book.rating %>
-</p>
+  <p>
+    <strong>Connection:</strong>
+    <%= @informational_book.connection %>
+  </p>
 
-<p>
-  <strong>Rationale:</strong>
-  <%= @informational_book.rationale %>
-</p>
+  <p>
+    <strong>Rating:</strong>
+    <%= @informational_book.rating %>
+  </p>
 
-<%= link_to 'Edit', edit_informational_book_path(@informational_book) %> |
-<%= link_to 'Destroy', informational_book, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', informational_books_path %>
+  <p>
+    <strong>Rationale:</strong>
+    <%= @informational_book.rationale %>
+  </p>
+
+  <%= link_to 'Back', informational_books_path, class:'btn btn-secondary' %>
+  <%= link_to 'Edit', edit_informational_book_path(@informational_book), class:'btn btn-warning' %>
+  <%= link_to 'Destroy', informational_book, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %>
+  
+
+</div>

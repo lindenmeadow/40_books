@@ -11,61 +11,114 @@
     </div>
   <% end %>
 
-  <div class="field mb-3">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+<div class="row">
+  <div class="col-md">
+    <label class="form-label">Book Title</label>
+    <div class="field mb-3">
+      <%= form.text_field :title, class:'form-control' %>
+    </div>
   </div>
 
-  <div class="field mb-3">
-    <%= form.label :date_finished %>
-    <%= form.date_select :date_finished %>
+  <div class="col-md">
+    <label class="form-label">Date Finished</label>
+    <div class="field mb-3">
+      <%= form.date_field :date_finished, class:'form-control' %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+     <div class="col-md">
+        <label class="form-label">Number of Pages</label>
+        <div class="field mb-3">
+          <%= form.number_field :pages, class:'form-control' %>
+        </div>
+      </div>
+
+      <div class="col-md">
+        <label class="form-label">Author</label>
+        <div class="fieldmb-3">
+          <%= form.text_field :author, class:'form-control' %>
+        </div>
+      </div>
+</div>
+
+<div class="row">
+  <div class="col-md">
+    <label class="form-label">3 Things I Learned from This Book</label>
+    <div class="fieldmb-3">
+      <%= form.text_area :things_learned, class:'form-control' %>
+    </div>
   </div>
 
-  <div class="field mb-3">
-    <%= form.label :pages %>
-    <%= form.number_field :pages %>
+  <div class="col-md">
+    <label class="form-label">2 Words I Learned from This Book, with Definitions</label>
+    <div class="field mb-3">
+      <%= form.text_area :words_learned, class:'form-control' %>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md">
+    <label class="form-label">A Question I Have about This Topic</label>
+    <div class="fieldmb-3">
+      <%= form.text_area :question, class:'form-control' %>
+    </div>
   </div>
 
-  <div class="field mb-3">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
+  <div class="col-md">
+    <label class="form-label">A Connection I Have to This Topic</label>
+    <div class="field mb-3">
+      <%= form.text_area :connection, class:'form-control' %>
+    </div>
   </div>
+</div>
 
-  <div class="field mb-3">
-    <%= form.label :things_learned %>
-    <%= form.text_area :things_learned %>
-  </div>
+<div class="row">
+      <div class="col-md">
+          <fieldset class="row mb-3">
+            <label class="form-label">Your Rating</label>
+            <div class="input-group">
+              <div class="col-sm-2 text-center">
+                <div class="form-check">
+                  <%= form.radio_button :rating, "Yuck" %> &#128541;<br> Yuck
+                </div>
+              </div>
+      
+              <div class="col-sm-2 text-center">
+                <div class="form-check">
+                  <%= form.radio_button :rating, "Meh" %> &#128528;<br> Meh
+                </div>
+              </div>
+      
+              <div class="col-sm-2 text-center">
+                <div class="form-check text-center">
+                  <%= form.radio_button :rating, "Good" %> &#128578;<br> Good
+                </div>
+              </div>
+      
+              <div class="col-sm-2 text-center">
+                <div class="form-check">
+                  <%= form.radio_button :rating, "Awesome" %> &#128516;<br> Awesome
+                </div>
+              </div>
 
-  <div class="field mb-3">
-    <%= form.label :words_learned %>
-    <%= form.text_area :words_learned %>
-  </div>
+            </div>
+          </fieldset>
+      </div>
 
-  <div class="field mb-3">
-    <%= form.label :question %>
-    <%= form.text_area :question %>
-  </div>
+      <div class="col-md">
+          <label class="form-label">Rating Rationale</label>
+          <div class="field mb-3">
+            <%= form.text_area :rationale, class:'form-control', placeholder:'I gave it a ___ rating because...' %>
+          </div>
+      </div>
+</div>
 
-  <div class="field mb-3">
-    <%= form.label :connection %>
-    <%= form.text_area :connection %>
-  </div>
-
-  <div class="field mb-3">
-    <%= form.label :rating %>
-    <br>
-    <%= form.radio_button :rating, "Yuck" %>Yuck <br>
-    <%= form.radio_button :rating, "Meh" %>Meh <br>
-    <%= form.radio_button :rating, "Good" %>Good <br>
-    <%= form.radio_button :rating, "Awesome" %>Awesome <br>
-  </div>
-
-  <div class="field mb-3">
-    <%= form.label :rationale %>
-    <%= form.text_area :rationale %>
-  </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit", class:'btn btn-success' %>
   </div>
+  <br>
 <% end %>
