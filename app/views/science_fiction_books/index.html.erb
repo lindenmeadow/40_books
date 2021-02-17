@@ -1,5 +1,55 @@
 <div class="container">
   <h1 class="text-center">Science Fiction</h1>
+
+  <div class="text-center">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Science Fiction Help Sheet
+    </button>
+  </div>
+
+  <hr>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul>
+          <li>Fictional story that includes science and technology</li>
+          <li>Setting
+            <ul>
+              <li>Future</li>
+              <li>Time Travel</li>
+              <li>Outer Space</li>
+              <li>Deep within the Earth</li>
+            </ul>
+          </li>
+          <li>Characters
+            <ul>
+              <li>Aliens</li>
+              <li>Mutants</li>
+              <li>Robots</li>
+              <li>Other futuristic beings</li>
+            </ul>
+          </li>
+          <li>Plot
+            <ul>
+              <li>Use of science or technology</li>
+                <ul>
+                  <li>Ray guns</li>
+                  <li>Teleportation Machines</li>
+                </ul>
+              <li>Parts of science may be unrealistic (part of it is true, part is untrue)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="container">
     <ul class="list-group list-group-flush text-center book-list">
         <% @science_fiction_books.each do |science_fiction_book| %>

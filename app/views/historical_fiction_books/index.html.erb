@@ -2,6 +2,32 @@
 
   <h1 class="text-center">Historical Fiction</h1>
 
+  <div class="text-center">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Historical Fiction Help Sheet
+    </button>
+  </div>
+
+  <hr>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul>
+          <li>An imaginary story that takes place in a real time in the past</li>
+          <li>Setting is a real time and place in history</li>
+          <li>Characters can be based on real people (nonfiction) or made up people (fiction)</li>
+          <li>Some events really happened (nonfiction) and some are made up (fiction)</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="container">
       <ul class="list-group list-group-flush text-center book-list">
           <% @historical_fiction_books.each do |historical_fiction_book| %>

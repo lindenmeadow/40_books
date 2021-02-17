@@ -2,6 +2,30 @@
 
     <h1 class="text-center">Biographies</h1>
 
+    <div class="text-center">
+      <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Biography or Autobiography?
+      </button>
+    </div>
+
+<hr>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h6>Biography</h6>
+        <p>Story of a real person's life, written by another person</p>
+        <h6>Autobiography</h6>
+        <p>Story of a real person's life, written by that person</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="container">
         <ul class="list-group list-group-flush text-center book-list">
           <% @biography_books.each do |biography_book| %>

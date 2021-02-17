@@ -1,4 +1,27 @@
+<div class="container">
+
 <h1 class="text-center">Poetry Anthologies</h1>
+
+<div class="text-center">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      What Is Poetry?
+    </button>
+</div>
+
+<hr>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>Verse and rhythmic writing that creates an emotional response</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="container">
     <ul class="list-group list-group-flush text-center book-list">
@@ -11,3 +34,5 @@
 <hr>
 
 <div class="text-center"><%= link_to 'New Poetry Anthology Book', new_poetry_anthology_book_path, class:'btn btn-primary' %></div>
+
+</div>

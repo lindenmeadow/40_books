@@ -1,6 +1,47 @@
 <div class="container">
   <h1 class="text-center">Fantasy</h1>
 
+  <div class="text-center">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Fantasy Help Sheet
+    </button>
+  </div>
+
+  <hr>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul>
+          <li>An imaginative story that is entirely made up</li>
+          <li>Has events that could not occur in real life
+            <ul>
+              <li>Magic carpet rides</li>
+              <li>Travelling through time</li>
+            </ul>
+          </li>
+          <li>Has unrealistic characters
+            <ul>
+              <li>Animals that can talk</li>
+              <li>People that have magical powers</li>
+            </ul>
+          </li>
+          <li>Why authors write fantasy:
+            <ul>
+              <li>To entertain their readers</li>
+              <li>Can be creative and come up with a silly or crazy story that will keep the reader engaged in reading</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="container">
     <ul class="list-group list-group-flush text-center book-list">
         <% @fantasy_books.each do |fantasy_book| %>

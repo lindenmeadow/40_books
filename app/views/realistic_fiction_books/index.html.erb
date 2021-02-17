@@ -1,5 +1,32 @@
 <div class="container">
   <h1 class="text-center">Realistic Fiction</h1>
+
+  <div class="text-center">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Realistic Fiction Help Sheet
+    </button>
+  </div>
+
+  <hr>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul>
+          <li>Takes place in the present time</li>
+          <li>Everything in the story could happen</li>
+          <li>Characters are realistic people</li>
+          <li>Story may be set in real places, but the story is not based on history</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="container">
       <ul class="list-group list-group-flush text-center book-list">
         <% @realistic_fiction_books.each do |realistic_fiction_book| %>

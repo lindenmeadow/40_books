@@ -53,7 +53,7 @@
 
   <%= link_to 'Back', informational_books_path, class:'btn btn-secondary' %>
   <%= link_to 'Edit', edit_informational_book_path(@informational_book), class:'btn btn-warning' %>
-  <%= link_to 'Destroy', informational_book, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %>
+  <%= link_to 'Destroy', @informational_book, method: :delete, data: { confirm: 'Are you sure?' }, class:'btn btn-danger' %>
   
 
 </div>

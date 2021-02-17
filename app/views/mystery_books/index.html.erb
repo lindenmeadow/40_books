@@ -1,4 +1,56 @@
+<div class="container">
+
 <h1 class="text-center">Mystery</h1>
+
+<div class="text-center">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Mystery Help Sheet
+    </button>
+  </div>
+
+  <hr>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul>
+          <li>Focuses on solving a crime or unusual event</li>
+          <li>Crime<br>
+            - An action committed that is against the law</dd>
+          </li>
+          <li>Clue<br>
+            - A fact or object that helps solve the crime
+          </li>
+          <li>Detective/Sleuth<br>
+            - A person who attempts to solve a mystery by gathering helpful clues and information
+          </li>
+          <li>Victim<br>
+            - Someone who is harmed or suffers because of the crime/mystery
+          </li>
+          <li>Suspect<br>
+            - A person who is believed to have committed or taken part in the crime ("Who did it?")
+          </li>
+          <li>Witness<br>
+            - Someone who saw the crime happen or knows something about it and can provide information
+          </li>
+          <li>Alibi<br>
+            - A story, excuse, or person a suspect uses to prove that they were not near the crime (the cover story)
+          </li>
+          <li>Red herring<br>
+            - A false lead or suspect that is meant to throw the investigator off track (bad information)
+          </li>
+          <li>Evidence<br>
+            - Something that proves who was involved in the crime
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       
 <div class="container">
   <ul class="list-group list-group-flush text-center book-list">  
@@ -11,3 +63,5 @@
 <hr>
 
 <div class="text-center"><%= link_to 'Add a Mystery Review', new_mystery_book_path, class:'btn btn-primary' %></div>
+
+</div>
