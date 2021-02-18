@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :informational_books
   resources :biography_books
   resources :poetry_anthology_books

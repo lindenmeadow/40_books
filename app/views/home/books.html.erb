@@ -2,17 +2,17 @@
     <h1 class="text-center">Your Reading Log</h1>
         <h3 class="text-center">Your Progress:</h3>
     <% if @book_total < 20 %>
-        <h4 class="text-center"><%= @book_total %> Books Read</h4>
+        <h4 class="text-center">You've read <strong><%= @book_total %></strong> books.</h4>
     <% elsif @book_total == 20 %>
-        <h4 class="text-center">20 Books Read. Halfway to Your Goal!</h4>
+        <h4 class="text-center">You've read 20 books. Good job! &#128079;</h4>
     <% elsif @book_total > 20 && @book_total < 30 %>
-        <h4 class="text-center"><%= @book_total %> Books Read</h4>
+        <h4 class="text-center">You've read <strong><%= @book_total %></strong> books.</h4>
     <% elsif @book_total == 30 %>
-        <h4 class="text-center">30 Books Read. Doing Great!</h4>
+        <h4 class="text-center">You've read 30 books. Fantastic! &#128526;</h4>
     <% elsif @book_total > 30 && @book_total < 40 %>
-        <h4 class="text-center"><%= @book_total %> Books Read</h4>
+        <h4 class="text-center">You've read <strong><%= @book_total %></strong> books.</h4>
     <% elsif @book_total == 40 %>
-        <h3 class="text-center">Congratulations! You Have Completed the 40 Book Challenge!</h3>
+        <h3 class="text-center">Congratulations! You have completed the 40 Book Challenge! &#127942;</h3>
     <% end %>
     <br>
     <h4 class="text-center">Book Categories</h4>
