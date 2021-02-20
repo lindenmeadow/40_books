@@ -11,6 +11,7 @@ class CreateBiographyBooks < ActiveRecord::Migration[6.0]
       t.text :connection
       t.string :rating
       t.text :rationale
+      t.integer :user_id
 
       t.timestamps
     end

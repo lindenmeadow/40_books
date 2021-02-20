@@ -13,6 +13,7 @@ class CreateRealisticFictionBooks < ActiveRecord::Migration[6.0]
       t.string :rating
       t.text :rationale
       t.string :illustrator
+      t.integer :user_id
 
       t.timestamps
     end

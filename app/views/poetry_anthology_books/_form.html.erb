@@ -133,6 +133,10 @@
   </div>
 </div>
 
+<div class="field mb-3">
+    <%= form.number_field :user_id, class:"form-control", value: current_user.id, type: :hidden %>
+</div>
+
   <div class="actions">
     <%= form.submit "Submit", class:"btn btn-success" %>
   </div>

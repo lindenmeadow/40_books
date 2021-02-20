@@ -13,6 +13,7 @@ class CreatePoetryAnthologyBooks < ActiveRecord::Migration[6.0]
       t.text :literal_language
       t.text :nonliteral_language
       t.text :stanza
+      t.integer :user_id
 
       t.timestamps
     end

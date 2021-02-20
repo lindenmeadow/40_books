@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "solution"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "connection"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -57,6 +59,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "solution"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -74,6 +77,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "solution"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -89,6 +93,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "connection"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -106,6 +111,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "solution"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -123,6 +129,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "literal_language"
     t.text "nonliteral_language"
     t.text "stanza"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -140,6 +147,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.string "rating"
     t.text "rationale"
     t.string "illustrator"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -157,6 +165,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "solution"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -174,6 +183,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_200050) do
     t.text "solution"
     t.string "rating"
     t.text "rationale"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
