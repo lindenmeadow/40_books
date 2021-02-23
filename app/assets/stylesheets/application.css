@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.navbar-nav {
+  margin-left: auto;
+  text-align: right;
+}
+
 .form-section {
   border: 2px solid black;
   padding: 1rem;
