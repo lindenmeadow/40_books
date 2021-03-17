@@ -1,7 +1,7 @@
 <%= form_with(model: poetry_anthology_book, local: true) do |form| %>
   <% if poetry_anthology_book.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(poetry_anthology_book.errors.count, "error") %> prohibited this poetry_anthology_book from being saved:</h2>
+      <h2>Oops! We have a problem!</h2>
 
       <ul>
         <% poetry_anthology_book.errors.full_messages.each do |message| %>
@@ -15,14 +15,14 @@
     <div class="col-md">
       <label class="form-label">Book Title</label>
       <div class="field mb-3">
-        <%= form.text_field :title, class:'form-control' %>
+        <%= form.text_field :title, class:'form-control', required: true %>
       </div>
     </div>
 
     <div class="col-md">
       <label class="form-label">Date Finished</label>
       <div class="field mb-3">
-        <%= form.date_field :date_finished, class:'form-control' %>
+        <%= form.date_field :date_finished, class:'form-control', required: true %>
       </div>
     </div>
 </div>
@@ -31,14 +31,14 @@
      <div class="col-md">
         <label class="form-label">Number of Pages</label>
         <div class="field mb-3">
-          <%= form.number_field :pages, class:'form-control' %>
+          <%= form.number_field :pages, class:'form-control', required: true %>
         </div>
       </div>
 
       <div class="col-md">
         <label class="form-label">Author</label>
         <div class="fieldmb-3">
-          <%= form.text_field :author, class:'form-control' %>
+          <%= form.text_field :author, class:'form-control', required: true %>
         </div>
       </div>
 </div>
@@ -47,14 +47,14 @@
      <div class="col-md">
         <label class="form-label">Illustrator</label>
         <div class="field mb-3">
-          <%= form.text_field :illustrator, class:'form-control', placeholder:"(If no illustrator, put 'none')" %>
+          <%= form.text_field :illustrator, class:'form-control', placeholder:"(If no illustrator, put 'none')", required: true %>
         </div>
       </div>
 
       <div class="col-md">
         <label class="form-label">Favorite Poem</label>
         <div class="fieldmb-3">
-          <%= form.text_area :favorite_poem, class:'form-control', placeholder:"My favorite poem in this anthology was ____ because..." %>
+          <%= form.text_area :favorite_poem, class:'form-control', placeholder:"My favorite poem in this anthology was ____ because...", required: true %>
         </div>
       </div>
 </div>
@@ -63,7 +63,7 @@
   <div class="col-md">
     <label class="form-label">Not So Favorite Poem</label>
     <div class="field mb-3">
-      <%= form.text_area :least_favorite_poem, class:'form-control', placeholder:"My not so favorite poem in this anthology was ____ because..." %>
+      <%= form.text_area :least_favorite_poem, class:'form-control', placeholder:"My not so favorite poem in this anthology was ____ because...", required: true %>
     </div>
   </div>
 
@@ -105,14 +105,14 @@
   <div class="col-md">
     <label class="form-label">Rating Rationale</label>
     <div class="field mb-3">
-      <%= form.text_area :rationale, class:'form-control', placeholder:'I gave it a ___ rating because...' %>
+      <%= form.text_area :rationale, class:'form-control', placeholder:'I gave it a ___ rating because...', required: true %>
     </div>
   </div>
 
   <div class="col-md">
     <label class="form-label">An Example of Literal Language from a Poem</label>
     <div class="field mb-3">
-      <%= form.text_area :literal_language, class:'form-control' %>
+      <%= form.text_area :literal_language, class:'form-control', required: true %>
     </div>
   </div>
 </div>
@@ -121,14 +121,14 @@
   <div class="col-md">
     <label class="form-label">An Example of Non-Literal Language from a Poem</label>
     <div class="field mb-3">
-      <%= form.text_area :nonliteral_language, class:'form-control' %>
+      <%= form.text_area :nonliteral_language, class:'form-control', required: true %>
     </div>
   </div>
 
   <div class="col-md">
     <label class="form-label">An Example of a Stanza from a Poem</label>
     <div class="field mb-3">
-      <%= form.text_area :stanza, class:'form-control' %>
+      <%= form.text_area :stanza, class:'form-control', required: true %>
     </div>
   </div>
 </div>

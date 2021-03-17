@@ -1,7 +1,7 @@
 <%= form_with(model: award_winner_book, local: true) do |form| %>
   <% if award_winner_book.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(award_winner_book.errors.count, "error") %> prohibited this review from being saved:</h2>
+      <h2>Oops! We have a problem!</h2>
 
       <ul>
         <% award_winner_book.errors.full_messages.each do |message| %>

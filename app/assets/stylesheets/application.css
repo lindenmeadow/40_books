@@ -2,9 +2,39 @@
   box-sizing: border-box;
 }
 
+.navbar {
+  background-color: #000066;
+}
+
 .navbar-nav {
   margin-left: auto;
   text-align: right;
+}
+
+.nav-link,
+.navbar-brand {
+  color: ivory;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+  color: gold;
+}
+
+.landing-header {
+  max-width: 100%;
+  height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(read.jpg) no-repeat center / cover;
+  color: ivory;
+}
+
+.header-text {
+  width: 60%;
+  margin: auto;
+  background-color: rgba(204, 204, 255, 0.6);
+  border-radius: 3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .form-section {
@@ -45,4 +75,16 @@
 .fingers {
   width: 60px;
   height: 75px;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #000066;
+  color: ivory;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: ivory;
 }
